@@ -1,0 +1,22 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.changes[:shipping] do %>
+    <div class="info alert"><%= @changeset.changes.shipping.errors[:shipping_method_id] %></div>
+  <% end %>
+  <%= inputs_for f, :shipment_units, fn fship -> %>
+    <%= inputs_for fship, :shipment, fn fshipment -> %>
+      <h4>Select your shipping method for <%=  shipment_details(fship.source.data) %></h4>
+      <div class="form-group">
+        <%= if has_shipping_method?(@data, fship.source.data.id) do %>
+          <%= label fshipment, :shipping_method_id, "Shipping Method", class: "control-label" %>
+          <%= select fshipment, :shipping_method_id, shipping_method_selection(@data, fship.source.data.id), prompt: "Choose your shipping method" %>
+          <%= error_tag fshipment, :shipping_method_id %>
+        <% else %>
+          <div>we cannot deliver these products at this time to your location.</div>
+        <% end %>
+      </div>
+    <% end %>
+    <hr>
+  <% end %>
+
+  <%= submit "Next", class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="ECommerce POC">
+    <meta name="author" content="Benny, Jonny, Liingoew">
+
+    <title>Hello Liingoew!</title>
+    <meta name="csrf" content="<%= Plug.CSRFProtection.get_csrf_token() %>">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <%= {:safe, css_link_tag() } %>
+  </head>
+
+  <!-- <body data-js-view-name="<%= js_view_name(@view_module, @view_template) %>"> -->
+  <body>
+  <!-- <%= render @view_module, @view_template, assigns %> -->
+    <!-- <div class="container"> -->
+      <div id="site-wrapper">
+          <!-- <div id="root"></div> -->
+      </div>
+    <!-- </div> -->
+    <%= {:safe, js_script_tag() } %>
+    <!-- <%= render_existing @view_module, "script.#{@view_template}", assigns %> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+</html>

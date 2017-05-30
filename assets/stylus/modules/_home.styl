@@ -1,0 +1,404 @@
+.full.container.hero {
+    width: 1200px;
+    height: 400px;
+    background-image: url('http://localhost:8080/static/images/home/homehero-music.jpg');
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+    background-position: center;
+}
+
+
+.full.container.hero .copy-container {
+    padding-top: 170px;
+    width: 100%;
+    margin: auto;
+}
+
+.full.container.hero .copy-container h2 {
+    letter-spacing: -.02em;
+    font-size: 45px;
+    font-weight: 700;
+    line-height: 1.1em;
+    text-shadow: 0px 2px 15px #775933;
+}
+
+.cat-header {
+    font-size: 70px;
+    letter-spacing: -.06em;
+}
+
+.cat-subtext {
+    margin-top: 20px;
+    padding-top: 10px;
+    letter-spacing: .09em;
+}
+
+.cat-women {
+    /* background-image: '../..'/images/home/model-women.jpg'); */
+    /* width: 490px; */
+    height: 290px;
+    background-image: url('http://localhost:8080/static/images/home/category-portraits-1.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.cat-women:hover {
+    background-position: center -290px;
+}
+
+
+.cat-men {
+    /* background-image: '../..'/images/home/model-men.jpg'); */
+    /* width: 490px; */
+    height: 290px;
+    background-image: url('http://localhost:8080/static/images/home/category-portraits-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center -580px;
+}
+
+.cat-men:hover {
+    background-position: center -870px;
+}
+
+.container.genders {
+    margin-top: 55px;
+    margin-bottom: 37px;
+    color: white;
+    text-align: center;
+}
+
+.container.genders a {
+    color: white;
+}
+
+.container.genders .cat-women, .container.genders .cat-men  {
+    /* padding-top: 264px; */
+    /* transition: all 0.6s ease; */
+}
+
+
+.container.genders .cat-women .cat-subtext, .container.genders .cat-men .cat-subtext {
+    /* transition: all 0.6s ease; */
+    display: none;
+    opacity: 0;
+}
+
+.container.genders .cat-women .cat-header, .container.genders .cat-men .cat-header {
+    transition: all 0.4s ease;
+    margin-left: -25px;
+    padding-top: 264px;
+}
+
+.popular-frames {
+    text-align: center;
+}
+
+.popular-frames h2 {
+    font-size: 28px;
+}
+
+.row.category {
+    margin-bottom: 58px;
+}
+
+.second-hero {
+    width: 1200px;
+    height: 480px;
+    background-color: white;
+    background-image: url('http://localhost:8080/static/images/home/home-rescue-hemingway.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/*
+.second-hero .cta-container {
+    left: 13%;
+    top: 75%;
+    position: relative;
+}
+*/
+
+.rtb.row {
+    font-weight: lighter;
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.4em;
+    padding-top: 40px;
+}
+
+.rtb.row div {
+    padding: 0 35px;
+}
+
+.rtb.row a {
+    color: #f5a511;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.testimonals {
+    padding: 50px 0px 45px;
+}
+
+.testimonial {
+    padding-right: 35px;
+    padding-left: 35px;
+    line-height: 1.5em;
+}
+
+
+.floating-headline {
+    padding-top: 60px;
+}
+
+.floating-headline h2 {
+    font-size: 68px;
+    font-weight: bold;
+    line-height: 16px;
+}
+
+/* browser specific styles */
+
+    /* Large desktop */
+    @media (min-width: 1200px) {
+
+        .navbar-left {
+            margin-left: 125px;
+        }
+
+        .container.genders .cat-women:hover, .container.genders .cat-men:hover {
+            /* padding-top: 210px; */
+            /* transition: all 0.3s ease; */
+        }
+
+        .container.genders .cat-women:hover .cat-header, .container.genders .cat-men:hover .cat-header {
+            padding-top: 210px;
+            transition: all 0.2s ease;
+        }
+
+        .container.genders .cat-women:hover .cat-subtext, .container.genders .cat-men:hover .cat-subtext {
+            transition: all 0.2s ease;
+            display: block;
+            opacity: 1;
+        }
+
+
+    }
+
+    /* This is that weird spot in the middle */
+    @media (min-width: 1000px) and (max-width: 1200px) {
+
+        .container {
+            width: 100%;
+        }
+
+        .container.genders .cat-women:hover, .container.genders .cat-men:hover {
+            /* padding-top: 210px; */
+            /* transition: all 0.3s ease; */
+        }
+
+        .container.genders .cat-women:hover .cat-header, .container.genders .cat-men:hover .cat-header {
+            padding-top: 210px;
+            transition: all 0.2s ease;
+        }
+
+        .container.genders .cat-women:hover .cat-subtext, .container.genders .cat-men:hover .cat-subtext {
+            transition: all 0.2s ease;
+            display: block;
+            opacity: 1;
+        }
+
+    }
+
+    /* Portrait tablet to landscape and desktop */
+    @media (min-width: 768px) and (max-width: 1000px) {
+
+        .full.container.hero {
+            /* background-position: -150px 0px; */
+        }
+
+        .frame-image-container img {
+            width: 150px;
+            height: auto;
+        }
+
+        .hover-float {
+            height: auto;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+    }
+
+    /* Landscape phone to portrait tablet */
+    @media (max-width: 767px) {
+
+         .full.container.hero .copy-container {
+            padding-top: 180px;
+        }
+
+        .full.container.hero .copy-container h2 {
+            font-size: 30px;
+        }
+
+        .full.container.hero {
+            /* background-position: -350px 0px; */
+        }
+
+        .cat-women, .cat-men {
+            max-width: 100%;
+            min-width: 100%;
+            /* background-color: black; */
+            /* background-position: 25px 0px; */
+        }
+
+        .cat-women {
+            margin-bottom: 20px;
+        }
+
+        .floating-headline {
+            padding-top: 30px;
+        }
+
+        .floating-headline h2 {
+            font-size: 40px;
+            line-height: 3px;
+        }
+
+        .rtb.row div {
+            padding-bottom: 40px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+
+        .testimonial {
+            padding-right: 105px;
+            padding-left: 105px;
+            padding-bottom: 20px;
+        }
+
+        .second-hero {
+            width: 100%;
+            height: 320px;
+            background-color: white;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+    }
+
+    @media (min-width: 481px) and (max-width: 630px) {
+
+        .second-hero {
+            width: 80% !important;
+            background-color: white;
+            background-size: cover;
+            height: 240px;
+        }
+    }
+
+    /* Landscape phones and down */
+    @media (max-width: 480px) {
+
+        .full.container.hero .copy-container {
+            padding-top: 165px;
+        }
+
+        .full.container.hero .copy-container h2 {
+            font-size: 38px;
+        }
+
+        .navbar-brand{
+            /* margin-left: 15px; */
+        }
+
+        .full.container.hero {
+            /* background-position: -410px 0px; */
+        }
+
+        .full.container.hero .copy-container {
+            width: 350px;
+        }
+
+        .container.genders {
+            margin-top: 25px;
+        }
+
+        .cat-women, .cat-men {
+            max-width: 100%;
+            min-width: 100%;
+            background-color: black;
+        }
+
+        .floating-headline {
+            padding-top: 30px;
+        }
+
+        .floating-headline h2 {
+            font-size: 30px;
+            margin-top: 1px;
+            margin-bottom: 7px;
+        }
+
+
+        .rtb.row div {
+            padding-bottom: 40px;
+            padding-left: 60px;
+            padding-right: 60px;
+        }
+
+        .testimonial {
+            padding-right: 30px;
+            padding-left: 30px;
+            padding-bottom: 20px;
+        }
+
+        .second-hero {
+            width: 100%;
+            height: 190px;
+            background-color: white;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+    }
+
+
+
+    @media (max-width: 375px) {
+
+        .full.container.hero .copy-container {
+            width: 100%;
+            padding-top: 130px;
+        }
+
+        .full.container.hero .copy-container h2 {
+            font-size: 28px;
+        }
+
+        .full.container.hero {
+            background-size: 1000px;
+            height: 330px;
+        }
+
+        .frame-image-container img {
+            width: 100%;
+            height: auto;
+        }
+
+        .second-hero {
+            background-size: 130%;
+            height: 150px;
+        }
+
+        .floating-headline h2 {
+            line-height: 30px;
+        }
+
+    }
